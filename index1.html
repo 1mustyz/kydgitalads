@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/stylee.css">
+    <link rel="stylesheet" type="text/css"
+    href=fontawesome-free-5.12.0-web/css/all.css>
+    <title>Document</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ .aa{
+    border:2px solid #fff;
+    padding: 10px 12px;
+    transition: .3s ease;
+}
+.aa:hover{
+    border:none;
+    background: #dfdfdf;
+    color: #169e03;
+}
+h1{
+    color: ;
+}
+@keyframes animation{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+body{
+    background-color: #f1f1f1;
+    font-family: serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #169e03;
+    z-index: 1000;
+    color: white;
+    position: fixed;
+    z-index: 80000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+    label.qbc{
+        font-size: 35px;
+        padding: 0 100px;
+        line-height: 80px;
+        font-weight: bold;
+    }
+label.qbc img{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+}
+nav ul {
+    float: right;
+    margin-right: 35px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding-right: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+nav ul li a{
+    color: rgb(248, 239, 239);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: filter 0.4s ease 0s;
+}
+nav ul li a:hover{
+    color: rgb(207, 207, 207);
+}
+.ere{
+    border:3px solid rgb(243, 242, 242); 
+    margin-right: 20px; 
+    border-radius:5px; 
+    padding:10px 20px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1dd305;
+}
+.ere:hover{
+    transform: translateY(-2px);
+}
+/* a.active,
+a:hover{
+    background: none;
+    transition:.5s ;
+} */
+nav .checkbar{
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.sds{
+height:90vh; 
+background:#141d26;
+padding:20px
+}
+.sdss{
+    height:70vh; 
+    background:#141d26;
+    padding:20px
+    }
+.xcv{
+    width: 100%;
+    display: block;
+    /* background: green; */
+    font-family:serif;
+    line-height: 1.3;
+    color: #fff;
+    text-align: center;
+}
+.xcv p{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(207, 206, 206);
+}
+.xcv h1{
+    font-weight: 500;
+    
+    line-height: 2;
+    color: #909090;
+    padding-bottom: 0.2em;
+    font-size: 30px;
+    line-height: 1.6;
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    text-align: center;
+}
+.xcv button{
+    padding: 20px 90px;
+    border-radius: 50px;
+    color:#fff;
+    background: #1dd305;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+}
+.xcv button.btnn{
+ border: 3px solid #1dd305;
+ color: #1dd305;
+ background: none;
+ margin-left: 40px;
+}
+.xcv button:hover{
+ transform: translateY(-6px);
+}
+.xcv button:hover{
+    background: #026e1d;
+}
+@media  (max-width:840px){
+    label.qbc{
+        font-size: 35px;
+        padding-left: 50px;
+    }
+    nav ul li{
+        font-size: 16px;
+    }
+    nav .checkbar{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #090c15;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all .7s;
+        /* line-height: 60px; */
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    /* a.active,
+    a:hover{
+        color: rgb(28, 129, 168);
+        background: none;
+        transition:.5s ;
+    } */
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~  ul li {
+        animation: animation .5s ease forwards;
+    }
+    }
+    @media  (max-width:500px){
+        .xcv h1{
+            font-size: 20px;
+            padding: 10px;
+        }
+        .xcv p{
+            font-size: 35px;
+            padding: 5px;
+        }
+        label.qbc{
+            font-size: 22px;
+            padding: 10px;
+            line-height: 80px;
+            font-weight: bold;
+        }
+        .xcv button{
+            padding: 15px 70px;
+            border-radius: 50px;
+            color:#fff;
+            background: #1dd305;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background 0.5s ease;
+            cursor: pointer;
+        }
+        .xcv button.btnn{
+         margin-left: 0px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbar">
+            <i class="fa fa-bars"></i>
+            </label>
+        <label class="qbc">KYDigitaltADS</label>
+        <ul>  
+            <li style="--i: .6s"><a href="index.html" class="active">Home</a></li>
+            <li style="--i: 1.1s"><a href="#">About</a></li>
+            <li style="--i: 1.35s"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section style="display: flex; height: 100vh; background: #141d26;">
+        <div style="display: flex; flex-wrap: wrap;align-items: center;justify-content: space-around; margin-top: 90px;">
+            <div class="xcv">
+                <div>
+                    <p>Welcome to KYDigitaltADS an Online Advert platform... we SERVE our Clients better</p>
+                    <h1>Contact Us Today to place your Advert</h1>
+                </div> 
+               <div>
+                <button class="btnn">know More Today <i class="fa fa-arrow"></i></button>
+                <button class="">Contact Us<i class="fa fa-arrow"></i></button>
+               </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
